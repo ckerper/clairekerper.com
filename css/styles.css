@@ -61,6 +61,16 @@ h3 {
     margin-bottom: 2rem;
 }
 
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 /* Header and Navigation */
 header {
     background-color: var(--primary-color);
@@ -174,10 +184,11 @@ nav a.active {
 }
 
 .main-links {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     margin: 3rem 0;
+    justify-content: center;
 }
 
 .link-card {
@@ -191,6 +202,7 @@ nav a.active {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+    flex: 0 1 300px;
 }
 
 .link-card:hover {
@@ -283,6 +295,18 @@ nav a.active {
     position: absolute;
     left: 0;
     color: var(--accent-color);
+}
+
+/* Pricing Section (Prints Page) */
+.pricing-section {
+    display: flex;
+    gap: 3rem;
+    margin: 2rem 0;
+    align-items: flex-start;
+}
+
+.pricing-description {
+    flex: 1;
 }
 
 /* Pricing Table */
@@ -422,7 +446,6 @@ nav a.active {
 }
 
 .contact-item a {
-    color: var(--forest-green);
     text-decoration: none;
 }
 
@@ -483,6 +506,10 @@ footer a:hover {
 
     .dropdown.active .dropdown-content {
         display: block;
+    }
+
+    .pricing-section {
+        flex-direction: column;
     }
 
     .pricing-table {
