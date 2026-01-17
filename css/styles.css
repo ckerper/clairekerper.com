@@ -10,9 +10,11 @@
 :root {
     --primary-color: #1F466D;
     --secondary-color: #77806D;
-    --accent-color: #c06c84;
+    --accent-color: #BCC6B1;
     --text-color: #333;
-    --light-gray: #D2CCC5;
+    --light-gray: #EBE8E5;
+    --lighter-gray: #F1F0ED;
+    --lightest-gray: #F8F7F6;
     --border-color: #ddd;
     --white: #ffffff;
 }
@@ -21,7 +23,7 @@ body {
     font-family: 'Georgia', 'Times New Roman', serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--white);
+    background-color: var(--lightest-gray);
 }
 
 /* Typography */
@@ -75,6 +77,15 @@ header {
     font-weight: 300;
     margin-bottom: 1rem;
     letter-spacing: 1px;
+}
+
+.site-title a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.site-title a:hover {
+    opacity: 0.9;
 }
 
 nav {
@@ -169,12 +180,16 @@ nav a.active {
 }
 
 .link-card {
+    display: block;
     background-color: var(--white);
     padding: 2rem;
     text-align: center;
     border: 2px solid var(--border-color);
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 .link-card:hover {
@@ -182,11 +197,16 @@ nav a.active {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.link-card a {
-    color: var(--accent-color);
-    text-decoration: none;
-    font-size: 1.2rem;
+.link-card h2 {
+    color: var(--secondary-color);
+    font-size: 1.3rem;
     font-weight: 500;
+    margin: 0 0 1rem 0;
+}
+
+.link-card p {
+    color: var(--text-color);
+    margin: 0;
 }
 
 /* Portfolio Grid */
