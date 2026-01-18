@@ -229,6 +229,13 @@ nav a.active {
     margin: 2rem 0;
 }
 
+/* Use regular grid for small collections (like human portraits) */
+.portfolio-grid.small-collection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-count: unset;
+}
+
 .portfolio-item {
     background-color: var(--white);
     border: 1px solid var(--border-color);
@@ -563,6 +570,10 @@ footer a:hover {
 
     .portfolio-grid {
         column-count: 1;
+    }
+
+    .portfolio-grid.small-collection {
+        grid-template-columns: 1fr;
     }
 
     .dropdown-content {
