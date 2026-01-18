@@ -499,8 +499,14 @@ nav a.active {
 
 /* Testimonials Page */
 .testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Two-column layout - commented out for single column */
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    /* gap: 2rem; */
+
+    /* Single column layout */
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
     margin: 2rem 0;
 }
@@ -512,7 +518,7 @@ nav a.active {
     margin: 0;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    font-style: italic;
+    font-style: normal;
     color: var(--text-color);
 }
 
