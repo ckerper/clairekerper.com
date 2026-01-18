@@ -27,6 +27,11 @@ body {
     background-color: var(--lightest-gray);
 }
 
+/* Dark background for portfolio page only */
+body.portfolio-page {
+    background-color: var(--light-gray);
+}
+
 /* Typography */
 h1, h2, h3, h4 {
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -238,10 +243,10 @@ nav a.active {
 
 .portfolio-item {
     background-color: var(--white);
-    border: 2px solid var(--secondary-color);
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 1.5rem;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
     display: inline-block;
     width: 100%;
     margin-bottom: 2rem;
@@ -249,8 +254,8 @@ nav a.active {
 }
 
 .portfolio-item:hover {
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-    border-color: var(--forest-green);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
 }
 
 .portfolio-item h3 {
