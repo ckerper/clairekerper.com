@@ -24,6 +24,11 @@ body {
     font-family: 'Georgia', 'Times New Roman', serif;
     line-height: 1.6;
     color: var(--text-color);
+    background-color: var(--lightest-gray);
+}
+
+/* Dark background for portfolio page only */
+body.portfolio-page {
     background-color: var(--light-gray);
 }
 
@@ -178,7 +183,7 @@ nav a.active {
 .hero {
     text-align: center;
     padding: 3rem 1rem;
-    background-color: var(--lighter-gray);
+    background-color: var(--light-gray);
     margin-bottom: 2rem;
     border-radius: 8px;
 }
@@ -304,7 +309,7 @@ nav a.active {
 .portfolio-item .image-placeholder {
     width: 100%;
     height: 200px;
-    background-color: var(--lighter-gray);
+    background-color: var(--light-gray);
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -318,7 +323,7 @@ nav a.active {
 
 /* Awards Section */
 .awards {
-    background-color: var(--lighter-gray);
+    background-color: var(--light-gray);
     padding: 2rem;
     border-radius: 8px;
     margin: 2rem 0;
@@ -388,7 +393,7 @@ nav a.active {
 .process-step {
     margin: 2rem 0;
     padding: 1.5rem;
-    background-color: var(--lighter-gray);
+    background-color: var(--light-gray);
     border-left: 4px solid var(--accent-color);
     border-radius: 4px;
 }
@@ -482,7 +487,7 @@ nav a.active {
 }
 
 .contact-item {
-    background-color: var(--lighter-gray);
+    background-color: var(--light-gray);
     padding: 1.5rem;
     border-radius: 8px;
     text-align: center;
