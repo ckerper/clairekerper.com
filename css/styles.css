@@ -272,6 +272,11 @@ nav a.active {
     margin-bottom: 1rem;
 }
 
+/* Force column break for manual column control */
+.portfolio-item.start-new-column {
+    break-before: column;
+}
+
 .portfolio-images .portrait-image {
     width: 100%;
 }
