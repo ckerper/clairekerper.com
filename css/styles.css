@@ -356,11 +356,16 @@ nav a.active {
     display: flex;
     gap: 3rem;
     margin: 2rem 0;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .pricing-description {
     flex: 1;
+}
+
+.pricing-table {
+    max-width: 250px;
+    flex-shrink: 0;
 }
 
 /* Pricing Table */
@@ -375,7 +380,7 @@ nav a.active {
 .pricing-table th,
 .pricing-table td {
     padding: 1rem;
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -607,15 +612,23 @@ footer a:hover {
 
     .pricing-section {
         flex-direction: column;
+        align-items: center;
     }
 
     .pricing-table {
         font-size: 0.9rem;
+        max-width: 250px;
+        margin: 1rem auto 2rem;
     }
 
     .pricing-table th,
     .pricing-table td {
         padding: 0.5rem;
+    }
+
+    .pricing-description {
+        text-align: left;
+        width: 100%;
     }
 
     .cta-container {
