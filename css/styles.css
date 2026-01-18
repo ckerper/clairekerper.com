@@ -222,12 +222,13 @@ nav a.active {
     margin: 0;
 }
 
-/* Portfolio Grid */
+/* Portfolio Grid - Masonry Style */
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin: 2rem 0;
+    grid-auto-flow: dense;
 }
 
 .portfolio-item {
@@ -236,10 +237,17 @@ nav a.active {
     border-radius: 8px;
     padding: 1.5rem;
     transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .portfolio-item:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Larger items for items with pet photos */
+.portfolio-item.with-pet-photo {
+    grid-row: span 2;
 }
 
 .portfolio-item h3 {
@@ -254,17 +262,21 @@ nav a.active {
     margin: 0.5rem 0;
 }
 
-/* Portfolio Images - Side by Side */
+/* Portfolio Images - Stacked with portrait featured */
 .portfolio-images {
     display: flex;
-    gap: 0.75rem;
+    flex-direction: column;
+    gap: 1rem;
     margin-bottom: 1rem;
 }
 
-.portfolio-images .portrait-image,
+.portfolio-images .portrait-image {
+    width: 100%;
+}
+
 .portfolio-images .pet-photo {
-    flex: 1;
-    min-width: 0; /* Allows flex items to shrink below their content size */
+    width: 70%;
+    align-self: center;
 }
 
 .portfolio-images img {
@@ -272,7 +284,14 @@ nav a.active {
     height: auto;
     border-radius: 4px;
     display: block;
-    object-fit: cover;
+}
+
+.portfolio-item > img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    display: block;
 }
 
 .portfolio-item .image-placeholder {
@@ -597,7 +616,11 @@ footer a:hover {
         grid-template-columns: 1fr;
     }
 
-    .portfolio-images {
-        flex-direction: column;
+    .portfolio-item.with-pet-photo {
+        grid-row: span 1;
+    }
+
+    .portfolio-images .pet-photo {
+        width: 85%;
     }
 }
