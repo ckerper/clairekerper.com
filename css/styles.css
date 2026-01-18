@@ -606,6 +606,11 @@ footer a:hover {
         margin: 1rem auto 2rem;
     }
 
+    /* Commissions table should use full width on mobile */
+    .commissions-pricing-table {
+        max-width: 100%;
+    }
+
     .pricing-table th,
     .pricing-table td {
         padding: 0.5rem;
@@ -641,6 +646,7 @@ footer a:hover {
 
     .commissions-pricing-table {
         font-size: 0.85rem;
+        max-width: 100%;
     }
 
     .commissions-pricing-table th,
