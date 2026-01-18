@@ -24,7 +24,7 @@ body {
     font-family: 'Georgia', 'Times New Roman', serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--lightest-gray);
+    background-color: var(--light-gray);
 }
 
 /* Typography */
@@ -172,13 +172,17 @@ nav a.active {
 .content {
     max-width: 900px;
     margin: 0 auto;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 /* Home Page Styles */
 .hero {
     text-align: center;
     padding: 3rem 1rem;
-    background-color: var(--light-gray);
+    background-color: var(--lighter-gray);
     margin-bottom: 2rem;
     border-radius: 8px;
 }
@@ -238,10 +242,10 @@ nav a.active {
 
 .portfolio-item {
     background-color: var(--white);
-    border: 2px solid var(--secondary-color);
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 1.5rem;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
     display: inline-block;
     width: 100%;
     margin-bottom: 2rem;
@@ -249,8 +253,8 @@ nav a.active {
 }
 
 .portfolio-item:hover {
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-    border-color: var(--forest-green);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
 }
 
 .portfolio-item h3 {
@@ -304,7 +308,7 @@ nav a.active {
 .portfolio-item .image-placeholder {
     width: 100%;
     height: 200px;
-    background-color: var(--light-gray);
+    background-color: var(--lighter-gray);
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -318,7 +322,7 @@ nav a.active {
 
 /* Awards Section */
 .awards {
-    background-color: var(--light-gray);
+    background-color: var(--lighter-gray);
     padding: 2rem;
     border-radius: 8px;
     margin: 2rem 0;
@@ -388,7 +392,7 @@ nav a.active {
 .process-step {
     margin: 2rem 0;
     padding: 1.5rem;
-    background-color: var(--light-gray);
+    background-color: var(--lighter-gray);
     border-left: 4px solid var(--accent-color);
     border-radius: 4px;
 }
@@ -482,7 +486,7 @@ nav a.active {
 }
 
 .contact-item {
-    background-color: var(--light-gray);
+    background-color: var(--lighter-gray);
     padding: 1.5rem;
     border-radius: 8px;
     text-align: center;
