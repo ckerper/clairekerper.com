@@ -377,6 +377,11 @@ nav a.active {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+/* Commissions pricing table - wider to accommodate more columns */
+.commissions-pricing-table {
+    max-width: 100%;
+}
+
 .pricing-table th,
 .pricing-table td {
     padding: 0.5rem 1rem;
