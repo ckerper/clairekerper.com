@@ -165,14 +165,6 @@
         </div>
     </main>
 
-    <!-- Portfolio detail overlay -->
-    <div id="portfolio-overlay" class="portfolio-detail-overlay">
-        <div class="detail-content">
-            <div class="detail-info" id="detail-info"></div>
-            <button class="detail-close" id="detail-close" aria-label="Close details">×</button>
-        </div>
-    </div>
-
     <footer>
         <p>&copy; Claire Kerper <span id="current-year">2026</span>. All rights reserved.</p>
         <p>
@@ -182,40 +174,6 @@
     </footer>
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
-
-        // Portfolio item click interaction
-        const portfolioItems = document.querySelectorAll('.portfolio-item');
-        const overlay = document.getElementById('portfolio-overlay');
-        const detailInfo = document.getElementById('detail-info');
-        const closeBtn = document.getElementById('detail-close');
-
-        portfolioItems.forEach(item => {
-            item.addEventListener('click', function(e) {
-                // Don't trigger if clicking on a link within the item
-                if (e.target.tagName === 'A') return;
-
-                const title = this.querySelector('h3').textContent;
-                const details = this.querySelector('.details');
-
-                if (details) {
-                    const detailsHTML = details.innerHTML;
-                    detailInfo.innerHTML = `<h3 style="margin: 0 0 0.5rem 0; color: var(--secondary-color);">${title}</h3><p style="margin: 0; color: #666;">${detailsHTML}</p>`;
-                    overlay.classList.add('active');
-                }
-            });
-        });
-
-        // Close overlay
-        closeBtn.addEventListener('click', function() {
-            overlay.classList.remove('active');
-        });
-
-        // Close on escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && overlay.classList.contains('active')) {
-                overlay.classList.remove('active');
-            }
-        });
     </script>
 </body>
 </html>
