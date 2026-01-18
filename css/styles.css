@@ -317,7 +317,7 @@ nav a.active {
 
 /* Awards Section */
 .awards {
-    background-color: var(--light-gray);
+    background-color: var(--white);
     padding: 2rem;
     border-radius: 8px;
     margin: 2rem 0;
