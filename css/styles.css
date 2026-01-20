@@ -509,28 +509,20 @@ nav a.active {
     flex: 0 1 calc(50% - 1rem);
     max-width: calc(50% - 1rem);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
-    position: relative;
-}
-
-/* Add invisible spacer on right to balance icon on left */
-.contact-info .link-card::after {
-    content: '';
-    width: 48px;
-    flex-shrink: 0;
+    gap: 1rem;
 }
 
 /* Contact page icons */
 .contact-icon {
-    width: 48px;
-    height: 48px;
+    width: 56px;
+    height: 56px;
     flex-shrink: 0;
     color: var(--secondary-color);
 }
 
 .contact-text {
-    flex: 1;
     text-align: center;
 }
 
