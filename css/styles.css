@@ -25,6 +25,7 @@
 
 body {
     font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+    font-size: 1.125rem; /* 18px - Crimson Pro appears smaller than Georgia */
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--lightest-gray);
@@ -63,7 +64,7 @@ h3 {
 
 .tagline {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     font-style: italic;
     color: var(--secondary-color);
     margin-bottom: 2rem;
