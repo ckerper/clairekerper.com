@@ -518,6 +518,14 @@ nav a.active {
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    position: relative;
+}
+
+/* Add invisible spacer on right to balance icon on left */
+.contact-info .link-card::after {
+    content: '';
+    width: 48px;
+    flex-shrink: 0;
 }
 
 /* Contact page icons */
