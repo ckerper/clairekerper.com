@@ -52,10 +52,6 @@ h1 {
     text-transform: lowercase;
 }
 
-/* Remove bottom margin from h1 when followed by contact-info */
-.content h1:has(+ .contact-info) {
-    margin-bottom: 0;
-}
 
 h2 {
     font-size: 2.5rem;
@@ -500,7 +496,7 @@ nav a.active {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    margin: 0 0 3rem 0;
+    margin: 1.5rem 0 3rem 0;
     justify-content: center;
 }
 
@@ -511,13 +507,14 @@ nav a.active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
+    padding: 1.25rem;
 }
 
 /* Contact page icons */
 .contact-icon {
-    width: 56px;
-    height: 56px;
+    width: 48px;
+    height: 48px;
     flex-shrink: 0;
     color: var(--secondary-color);
 }
@@ -526,9 +523,12 @@ nav a.active {
     text-align: center;
 }
 
-/* Remove margin between h1 and contact buttons */
-.content h1 + .contact-info {
-    margin-top: 0;
+.contact-text h2 {
+    margin-bottom: 0.25rem;
+}
+
+.contact-text p {
+    margin: 0;
 }
 
 /* Testimonials Page */
