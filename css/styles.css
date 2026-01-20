@@ -46,6 +46,11 @@ h1 {
     margin-bottom: 0.5rem;
 }
 
+/* Remove bottom margin from h1 when followed by contact-info */
+.content h1:has(+ .contact-info) {
+    margin-bottom: 0;
+}
+
 h2 {
     font-size: 2rem;
     font-weight: 300;
@@ -487,8 +492,19 @@ nav a.active {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    margin: 3rem 0;
+    margin: 0 0 3rem 0;
     justify-content: center;
+}
+
+/* Force 2x2 grid layout for contact buttons */
+.contact-info .link-card {
+    flex: 0 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+}
+
+/* Remove margin between h1 and contact buttons */
+.content h1 + .contact-info {
+    margin-top: 0;
 }
 
 /* Testimonials Page */
