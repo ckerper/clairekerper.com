@@ -1,5 +1,8 @@
 /* Claire Kerper Pet Portraits - Main Stylesheet */
 
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Josefin+Sans:wght@300;400;500;600&family=Dancing+Script:wght@400;500;600;700&display=swap');
+
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -21,7 +24,8 @@
 }
 
 body {
-    font-family: 'Georgia', 'Times New Roman', serif;
+    font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+    font-size: 1.4rem;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--lightest-gray);
@@ -34,16 +38,18 @@ body.portfolio-page {
 
 /* Typography */
 h1, h2, h3, h4 {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Josefin Sans', 'Helvetica Neue', Arial, sans-serif;
     color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
 h1 {
-    font-size: 2.5rem;
-    font-weight: 300;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.1rem;
+    font-weight: 600;
     text-align: center;
     margin-bottom: 0.5rem;
+    text-transform: lowercase;
 }
 
 /* Remove bottom margin from h1 when followed by contact-info */
@@ -52,20 +58,20 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 300;
     margin-top: 2rem;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     font-weight: 400;
     margin-top: 1.5rem;
 }
 
 .tagline {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     font-style: italic;
     color: var(--secondary-color);
     margin-bottom: 2rem;
@@ -84,7 +90,7 @@ a:hover {
 /* Header and Navigation */
 header {
     background-color: var(--primary-color);
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
@@ -92,12 +98,13 @@ header {
 }
 
 .site-title {
+    font-family: 'Dancing Script', cursive;
     text-align: center;
     color: var(--white);
-    font-size: 1.8rem;
-    font-weight: 300;
-    margin-bottom: 1rem;
-    letter-spacing: 1px;
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    text-transform: lowercase;
 }
 
 .site-title a {
@@ -110,7 +117,7 @@ header {
 }
 
 nav {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -174,13 +181,13 @@ nav a.active {
 
 /* Main Content Container */
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 2rem 1rem;
 }
 
 .content {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -222,7 +229,7 @@ nav a.active {
 
 .link-card h2 {
     color: var(--secondary-color);
-    font-size: 1.3rem;
+    font-size: 1.65rem;
     font-weight: 500;
     margin: 0 0 1rem 0;
 }
@@ -260,12 +267,12 @@ nav a.active {
 .portfolio-item h3 {
     margin-top: 1rem;
     color: var(--secondary-color);
-    font-size: 1.3rem;
+    font-size: 1.65rem;
 }
 
 .portfolio-item .details {
     color: #666;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     margin: 0.5rem 0;
 }
 
@@ -315,7 +322,7 @@ nav a.active {
     justify-content: center;
     color: #999;
     font-style: italic;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     text-align: center;
     padding: 0.5rem;
 }
@@ -447,7 +454,7 @@ nav a.active {
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     text-align: center;
 }
 
@@ -565,7 +572,7 @@ footer {
     background-color: var(--primary-color);
     color: var(--white);
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 1rem;
     margin-top: 4rem;
 }
 
@@ -585,15 +592,15 @@ footer a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     h2 {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 
     .site-title {
-        font-size: 1.4rem;
+        font-size: 1.75rem;
     }
 
     nav ul {
@@ -601,7 +608,7 @@ footer a:hover {
     }
 
     nav a {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         padding: 0.5rem 0.75rem;
     }
 
@@ -633,7 +640,7 @@ footer a:hover {
     }
 
     .pricing-table {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         max-width: 250px;
         margin: 1rem auto 2rem;
     }
@@ -668,16 +675,16 @@ footer a:hover {
     }
 
     h1 {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 
     nav a {
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding: 0.4rem 0.6rem;
     }
 
     .commissions-pricing-table {
-        font-size: 0.85rem;
+        font-size: 1.1rem;
         max-width: 100%;
     }
 
