@@ -492,6 +492,11 @@ nav a.active {
 }
 
 /* Contact Page */
+/* Narrow the content area on Contact page to force 2x2 button layout */
+.content:has(.contact-info) {
+    max-width: 650px;
+}
+
 .contact-info {
     display: flex;
     flex-wrap: wrap;
