@@ -726,7 +726,7 @@ footer a:hover {
 /* Hero Section */
 .homepage-hero {
     background-color: var(--light-gray);
-    padding: 4rem 2rem;
+    padding: 2rem 2rem 4rem;
     text-align: center;
 }
 
@@ -829,7 +829,7 @@ footer a:hover {
 /* How It Works Section */
 .how-it-works {
     background-color: var(--white);
-    padding: 3rem 0;
+    padding: 0 0 2rem;
 }
 
 .how-it-works h2 {
@@ -879,7 +879,7 @@ footer a:hover {
 
 .pricing-preview {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .pricing-preview p {
@@ -891,7 +891,7 @@ footer a:hover {
 
 /* Testimonials Preview Section */
 .testimonials-preview {
-    padding: 3rem 0;
+    padding: 0 0 2rem;
 }
 
 .testimonials-preview h2 {
