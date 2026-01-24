@@ -680,6 +680,10 @@ footer a:hover {
     .btn {
         width: 100%;
     }
+
+    footer {
+        font-size: 1.1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -708,6 +712,10 @@ footer a:hover {
     .commissions-pricing-table th,
     .commissions-pricing-table td {
         padding: 0.4rem 0.5rem;
+    }
+
+    footer {
+        font-size: 1rem;
     }
 }
 
