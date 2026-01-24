@@ -597,6 +597,10 @@ footer a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    body {
+        line-height: 1.4;
+    }
+
     h1 {
         font-size: 2.5rem;
     }
@@ -676,6 +680,10 @@ footer a:hover {
 }
 
 @media (max-width: 480px) {
+    body {
+        line-height: 1.35;
+    }
+
     .container {
         padding: 1rem 0.5rem;
     }
