@@ -777,10 +777,11 @@ footer a:hover {
 
 .featured-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-    max-width: 1200px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 800px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .featured-item {
@@ -883,17 +884,13 @@ footer a:hover {
 .pricing-preview {
     text-align: center;
     margin-top: 2rem;
-    padding: 1rem;
-    background-color: var(--lightest-gray);
-    border-radius: 8px;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .pricing-preview p {
     margin: 0;
     font-size: 1.2rem;
+    color: var(--secondary-color);
+    font-style: italic;
 }
 
 /* Testimonials Preview Section */
@@ -942,11 +939,6 @@ footer a:hover {
 }
 
 /* Homepage Responsive Styles */
-@media (max-width: 900px) {
-    .featured-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
 @media (max-width: 768px) {
     .homepage-hero {
@@ -982,7 +974,7 @@ footer a:hover {
 
     .featured-grid {
         grid-template-columns: 1fr;
-        max-width: 300px;
+        max-width: 350px;
     }
 
     .hero-cta {
