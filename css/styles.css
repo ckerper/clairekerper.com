@@ -955,6 +955,17 @@ footer a:hover {
         font-size: 1.2rem;
     }
 
+    .featured-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-item img {
+        height: auto;
+        width: 100%;
+        max-width: 400px;
+    }
+
     .process-overview {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -972,17 +983,6 @@ footer a:hover {
 @media (max-width: 480px) {
     .homepage-hero h1 {
         font-size: 2.5rem;
-    }
-
-    .featured-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .featured-item img {
-        height: auto;
-        width: 100%;
-        max-width: 350px;
     }
 
     .hero-cta {
