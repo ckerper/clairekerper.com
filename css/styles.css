@@ -1074,6 +1074,25 @@ footer a:hover {
     }
 }
 
+/* Desktop/Mobile visibility utilities */
+.desktop-only {
+    display: block;
+}
+
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktop-only {
+        display: none !important;
+    }
+
+    .mobile-only {
+        display: block !important;
+    }
+}
+
 /* Timeline Styles - Two independent columns with center line */
 .timeline {
     display: grid;
@@ -1152,36 +1171,16 @@ footer a:hover {
     border-radius: 4px;
 }
 
-/* Mobile: single column layout */
-@media (max-width: 768px) {
-    .timeline {
-        display: block;
-        padding-left: 35px;
-        position: relative;
-    }
+/* Mobile timeline - simple single column */
+.timeline-mobile {
+    max-width: 600px;
+    margin: 0 auto;
+}
 
-    /* Move line to left side on mobile */
-    .timeline-line {
-        position: absolute;
-        left: 12px;
-        top: 0;
-        bottom: 0;
-        width: 3px;
-    }
+.timeline-mobile .timeline-content h3 {
+    font-size: 1.2rem;
+}
 
-    .timeline-col {
-        padding: 0 !important;
-    }
-
-    .timeline-col-right {
-        padding-top: 0 !important;
-    }
-
-    .timeline-content h3 {
-        font-size: 1.2rem;
-    }
-
-    .timeline-content p {
-        font-size: 1.1rem;
-    }
+.timeline-mobile .timeline-content p {
+    font-size: 1.1rem;
 }
