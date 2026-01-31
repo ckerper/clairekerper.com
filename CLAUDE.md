@@ -66,8 +66,10 @@ This is the portfolio website for Claire Kerper, an artist specializing in custo
 
 ### Interactive States
 - Button hover: Forest green (`#434A39`) + `translateY(-2px)` lift
-- Card hover: `translateY(-3px)` + enhanced shadow
+- Card hover: `translateY(-3px)` + enhanced shadow (only for clickable cards)
 - Link hover: Remove underline, slight opacity change
+
+**Important:** Only interactive/clickable elements should have hover animations (lift effects, enhanced shadows). Static content like testimonials, process boxes, or informational cards should not lift on hover—if clicking it doesn't do anything, it shouldn't animate.
 
 ## Component Styles
 
