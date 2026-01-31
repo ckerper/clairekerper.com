@@ -1,6 +1,11 @@
 # Claire Kerper Portfolio Website
 
-This is the portfolio website for Claire Kerper, an artist specializing in custom hand-drawn pet portraits in colored charcoal.
+This is the portfolio website for Claire Kerper, an artist specializing in custom hand-drawn charcoal pet portraits.
+
+## Medium
+
+- **General reference:** "charcoal" (e.g., "charcoal portrait artist", "charcoal drawings")
+- **When describing process/materials:** "black, white, and colored charcoal"
 
 ## Brand Vibe
 
