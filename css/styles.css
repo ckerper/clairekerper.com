@@ -1074,12 +1074,12 @@ footer a:hover {
     }
 }
 
-/* Timeline Styles - Centered with alternating sides */
+/* Timeline Styles - Grid-based with centered line */
 .timeline {
     position: relative;
-    max-width: 900px;
+    max-width: 950px;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 /* Center line */
@@ -1094,92 +1094,47 @@ footer a:hover {
     background-color: var(--accent-color);
 }
 
-.timeline-item {
-    position: relative;
-    width: 50%;
-    padding: 0 2.5rem;
-    margin-bottom: 2rem;
+/* Each row is a 3-column grid: left | marker | right */
+.timeline-row {
+    display: grid;
+    grid-template-columns: 1fr 60px 1fr;
+    gap: 0;
+    align-items: start;
+    min-height: 60px;
 }
 
-.timeline-item:last-child {
-    margin-bottom: 0;
+.timeline-left,
+.timeline-right {
+    padding: 0.5rem 1.5rem;
 }
 
-/* Left side items (odd) */
-.timeline-item:nth-child(odd) {
-    left: 0;
+.timeline-left {
     text-align: right;
 }
 
-/* Right side items (even) */
-.timeline-item:nth-child(even) {
-    left: 50%;
+.timeline-right {
     text-align: left;
 }
 
-/* Year marker - sits on the center line */
+/* Center marker column */
+.timeline-marker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 0.5rem;
+}
+
 .timeline-year {
-    position: absolute;
-    top: 0;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     color: var(--white);
     background-color: var(--secondary-color);
-    padding: 0.25rem 0.75rem;
+    padding: 0.2rem 0.6rem;
     border-radius: 4px;
+    white-space: nowrap;
     z-index: 2;
-}
-
-/* Year position for left items */
-.timeline-item:nth-child(odd) .timeline-year {
-    right: -3.5rem;
-    transform: translateX(50%);
-}
-
-/* Year position for right items */
-.timeline-item:nth-child(even) .timeline-year {
-    left: -3.5rem;
-    transform: translateX(-50%);
-}
-
-/* Connector dot on the line */
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    top: 0.5rem;
-    width: 14px;
-    height: 14px;
-    background-color: var(--white);
-    border: 3px solid var(--secondary-color);
-    border-radius: 50%;
-    z-index: 1;
-}
-
-.timeline-item:nth-child(odd)::before {
-    right: -7px;
-}
-
-.timeline-item:nth-child(even)::before {
-    left: -7px;
-}
-
-/* Connector line from dot to card */
-.timeline-item::after {
-    content: '';
-    position: absolute;
-    top: 0.85rem;
-    width: 2rem;
-    height: 2px;
-    background-color: var(--accent-color);
-}
-
-.timeline-item:nth-child(odd)::after {
-    right: 7px;
-}
-
-.timeline-item:nth-child(even)::after {
-    left: 7px;
 }
 
 .timeline-content {
@@ -1188,6 +1143,7 @@ footer a:hover {
     border-radius: 8px;
     padding: 1.25rem;
     text-align: left;
+    margin-bottom: 1rem;
 }
 
 .timeline-content h3 {
@@ -1199,7 +1155,7 @@ footer a:hover {
 
 .timeline-content p {
     margin-bottom: 0;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
 }
 
 .timeline-content p + p {
@@ -1223,39 +1179,40 @@ footer a:hover {
     border-radius: 4px;
 }
 
-/* Mobile: stack everything in single column */
+/* Mobile: single column layout */
 @media (max-width: 768px) {
     .timeline::before {
-        left: 20px;
+        left: 15px;
         transform: none;
     }
 
-    .timeline-item {
-        width: 100%;
-        left: 0 !important;
-        padding-left: 50px;
-        padding-right: 0;
-        text-align: left !important;
+    .timeline-row {
+        display: block;
+        padding-left: 45px;
+        position: relative;
+        margin-bottom: 1.5rem;
     }
 
-    .timeline-item::before {
-        left: 13px !important;
-        right: auto !important;
+    .timeline-left,
+    .timeline-right {
+        padding: 0;
+        text-align: left;
     }
 
-    .timeline-item::after {
-        left: 27px !important;
-        right: auto !important;
-        width: 1.5rem;
+    .timeline-marker {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 0;
     }
 
     .timeline-year {
-        position: relative;
-        left: auto !important;
-        right: auto !important;
-        transform: none !important;
-        display: inline-block;
-        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+        padding: 0.15rem 0.4rem;
+    }
+
+    .timeline-content {
+        margin-bottom: 0;
     }
 
     .timeline-content h3 {
