@@ -98,8 +98,32 @@ This is the portfolio website for Claire Kerper, an artist specializing in custo
 
 ## Responsive Breakpoints
 
-- **Tablet:** max-width 768px
-- **Mobile:** max-width 480px
+### Tablet (max-width: 768px)
+- **Body:** Line height reduced to 1.4
+- **h1:** 3.1rem → 2.5rem
+- **h2:** 2.5rem → 2rem
+- **Site title:** 2.25rem → 1.75rem
+- **Nav links:** Font 1.1rem, padding 0.5rem 0.75rem, gap 0.25rem
+- **Portfolio grid:** Single column
+- **Homepage hero h1:** 4rem → 3rem
+- **Hero description:** 1.2rem
+- **Main links grid:** Single column, max-width 280px
+- **Featured grid:** Stacks vertically
+- **Process overview:** Single column
+
+### Mobile (max-width: 480px)
+- **Body:** Line height reduced to 1.35
+- **Container:** Padding 1rem 0.5rem
+- **h1:** 2.5rem → 2rem
+- **Nav links:** Font 1rem, padding 0.4rem 0.6rem
+- **Footer:** Font 1rem
+- **Pricing table:** Font 1.1rem, reduced cell padding
+- **Homepage hero h1:** 3rem → 2.5rem
+- **Hero CTA buttons:** Stack vertically, full width
+
+### Short Screens (max-height: 500px)
+- **Site title:** Hidden
+- **Header:** Reduced padding (0.5rem)
 
 ## File Structure
 
