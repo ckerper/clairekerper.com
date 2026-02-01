@@ -1184,3 +1184,95 @@ footer a:hover {
 .timeline-mobile .timeline-content p {
     font-size: 1.1rem;
 }
+
+/* Art Evolution Section */
+.art-evolution .section-intro {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 2.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.evolution-year {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.evolution-year:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.evolution-year > h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.evolution-category {
+    margin-bottom: 2rem;
+}
+
+.evolution-category:last-child {
+    margin-bottom: 0;
+}
+
+.evolution-category h4 {
+    font-size: 1.3rem;
+    color: var(--forest-green);
+    margin-bottom: 0.5rem;
+}
+
+.evolution-category .category-blurb {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.evolution-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.evolution-item {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.evolution-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .evolution-year > h3 {
+        font-size: 1.75rem;
+    }
+
+    .evolution-category h4 {
+        font-size: 1.15rem;
+    }
+
+    .evolution-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .evolution-year > h3 {
+        font-size: 1.5rem;
+    }
+
+    .evolution-gallery {
+        grid-template-columns: 1fr;
+    }
+}
