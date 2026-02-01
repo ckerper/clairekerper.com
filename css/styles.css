@@ -1235,9 +1235,10 @@ footer a:hover {
 }
 
 .evolution-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
+    justify-content: flex-start;
 }
 
 .evolution-item {
@@ -1245,11 +1246,13 @@ footer a:hover {
     border: 1px solid var(--border-color);
     border-radius: 6px;
     overflow: hidden;
+    max-width: 50%;
+    flex-shrink: 0;
 }
 
 .evolution-item img {
-    width: 100%;
-    height: auto;
+    height: 280px;
+    width: auto;
     display: block;
 }
 
@@ -1262,8 +1265,8 @@ footer a:hover {
         font-size: 1.15rem;
     }
 
-    .evolution-gallery {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    .evolution-item img {
+        height: 220px;
     }
 }
 
@@ -1272,7 +1275,13 @@ footer a:hover {
         font-size: 1.5rem;
     }
 
-    .evolution-gallery {
-        grid-template-columns: 1fr;
+    .evolution-item {
+        max-width: 100%;
+    }
+
+    .evolution-item img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
     }
 }
