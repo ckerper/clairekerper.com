@@ -1248,6 +1248,7 @@ footer a:hover {
     overflow: hidden;
     flex-basis: 0;
     min-width: 0;
+    max-width: calc(50% - 0.5rem);
 }
 
 /* Single image: keep at 50% max width, don't grow */
