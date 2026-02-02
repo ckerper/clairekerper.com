@@ -80,7 +80,7 @@ This is the portfolio website for Claire Kerper, an artist specializing in custo
 
 ### Buttons
 - Background: Secondary olive (`#77806D`)
-- Text: White
+- Text: White, sentence case (brand names like Etsy stay capitalized)
 - Padding: 1rem 2rem
 - Hover: Forest green with lift effect
 - Outline variant: Transparent with 2px border
