@@ -1246,21 +1246,21 @@ footer a:hover {
     border: 1px solid var(--border-color);
     border-radius: 6px;
     overflow: hidden;
-    flex: 1 1 auto;
-    max-width: calc(33.333% - 0.67rem);
+    flex-basis: 0;
+    min-width: 0;
 }
 
 /* Single image: keep at 50% max width, don't grow */
 .evolution-item:only-child {
-    flex: 0 0 auto;
+    flex-grow: 0 !important;
+    flex-basis: auto;
     max-width: 50%;
 }
 
 .evolution-item img {
-    height: 280px;
     width: 100%;
+    height: auto;
     display: block;
-    object-fit: cover;
 }
 
 @media (max-width: 768px) {
@@ -1271,18 +1271,6 @@ footer a:hover {
     .evolution-category h4 {
         font-size: 1.15rem;
     }
-
-    .evolution-item {
-        max-width: calc(50% - 0.5rem);
-    }
-
-    .evolution-item:only-child {
-        max-width: 50%;
-    }
-
-    .evolution-item img {
-        height: 220px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -1291,15 +1279,12 @@ footer a:hover {
     }
 
     .evolution-item {
+        flex-basis: 100% !important;
+        flex-grow: 1 !important;
         max-width: 100%;
-        flex: 1 1 100%;
     }
 
     .evolution-item:only-child {
         max-width: 100%;
-    }
-
-    .evolution-item img {
-        height: 200px;
     }
 }
